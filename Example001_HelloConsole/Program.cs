@@ -1,0 +1,1 @@
+﻿Console.WriteLine("Hello, World!"); // Вывод ("данных") в терминал
