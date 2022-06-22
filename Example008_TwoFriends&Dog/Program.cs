@@ -1,4 +1,4 @@
-﻿double distance = 10000;
+﻿double distance = 500;
 int firstFriendSpeed = 1;
 int secondFriendSpeed = 2;
 int dogSpeed = 5;
@@ -29,5 +29,6 @@ while (distance > meetDistance)
 
     count++;
 }
-Console.Write ("count = ");
-Console.WriteLine (count);
+Console.Write ("Собака пробежит ");
+Console.Write (count);
+Console.Write (" раз(а)");
