@@ -1,4 +1,4 @@
-﻿double distance = 500;
+﻿double distance = 10000;
 int firstFriendSpeed = 1;
 int secondFriendSpeed = 2;
 int dogSpeed = 5;
@@ -11,20 +11,23 @@ while (distance > meetDistance)
 {
     if (friend == 1)
 {
-    Console.Write ("friend = ");
-    Console.WriteLine (friend); 
+
     time = distance / (firstFriendSpeed + dogSpeed); // Время, за которое собака добежит до первого друга
     friend = 2;
     distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
+    Console.Write ("Текущее расстояние между друзьями ");
+    Console.WriteLine (distance);
 }
    
-    if (friend == 2)
+    else 
+    
     {
-    Console.Write ("friend = ");
-    Console.WriteLine (friend);
+    
     time = distance / (secondFriendSpeed + dogSpeed); // Время, за которое собака добежит до второго друга
     friend = 1;
     distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
+    Console.Write ("Текущее расстояние между друзьями ");
+    Console.WriteLine (distance);
     }
 
     count++;
