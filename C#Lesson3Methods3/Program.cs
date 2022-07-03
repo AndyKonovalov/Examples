@@ -18,7 +18,7 @@ void Sort(int[] array)
 
         for (int j = i + 1; j < array.Length; j++)
         {
-            if (array[j] < array [minPosition]) minPosition = j;
+            if (array[j] < array [minPosition]) minPosition = j; //чтобы массив отсортировался от большего значения к меньшему поменяли в if (array[j] < array [minPosition]) знак < на >
         }
         int temp = array[i];
         array[i] = array[minPosition];
